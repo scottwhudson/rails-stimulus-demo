@@ -13,8 +13,8 @@
 
   <div class="field" data-controller="foo">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :page_name, "data-target" => "foo.name" %>
-    <a href="" data-action="foo#greet">Hello</a>
+    <%= form.text_field :name, id: :page_name, data: { target: "foo.name" } %>
+    <%= link_to 'foo', "", remote: true, data: { action: "foo#greet" } %>
   </div>
 
   <div class="field">

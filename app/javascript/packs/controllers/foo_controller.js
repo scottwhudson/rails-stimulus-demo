@@ -1,3 +1,4 @@
+// https://github.com/stimulusjs/stimulus/blob/master/packages/%40stimulus/core/src/controller.ts
 import { Controller } from "stimulus"
 
 export default class extends Controller {
@@ -17,5 +18,3 @@ export default class extends Controller {
 		return this.targets.find("name").value
 	}
 }
-
-console.log('hello from foo controller')

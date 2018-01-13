@@ -1,17 +1,14 @@
-/* eslint no-console:0 */
-// This file is automatically compiled by Webpack, along with any other files
-// present in this directory. You're encouraged to place your actual application logic in
-// a relevant structure within app/javascript and only use these pack files to reference
-// that code so it'll be compiled.
-//
-// To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
-// layout file, like app/views/layouts/application.html.erb
+console.log('javascript/packs/application.js')
 
-console.log('Hello World from Webpacker')
+// https://github.com/stimulusjs/stimulus/blob/master/packages/%40stimulus/core/src/application.ts
 import { Application } from "stimulus"
+
+// https://github.com/stimulusjs/stimulus/blob/master/packages/%40stimulus/webpack-helpers/index.ts#L16
 import { autoload } from "stimulus/webpack-helpers"
 
-const application = Application.start()
+// https://webpack.js.org/api/module-methods/#require-context
 const context = require.context("./controllers", true, /\.js$/)
+
+const application = Application.start()
 
 autoload(context, application)
