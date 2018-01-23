@@ -1,5 +1,3 @@
-console.log('javascript/packs/application.js')
-
 // https://github.com/stimulusjs/stimulus/blob/master/packages/%40stimulus/core/src/application.ts
 import { Application } from "stimulus"
 
