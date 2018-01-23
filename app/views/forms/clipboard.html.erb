@@ -1,0 +1,7 @@
+<h2>Copy From Text Field</h2>
+
+<div data-controller="clipboard">
+	<input data-target="clipboard.source" type="text" value="http://www.example.com/somethingcool" readonly>
+
+	<%= button_tag :copy, data: { action: "clipboard#copy" } %>
+</div>
