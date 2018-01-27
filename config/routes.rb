@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	root to: "examples#index"
+  root to: "examples#index"
 
   get "/console", to: "examples#console"
   get "/clipboard", to: "examples#clipboard"

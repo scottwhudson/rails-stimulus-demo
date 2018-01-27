@@ -3,21 +3,21 @@
 
 
 <div data-controller="isp">
-	<h3>Select Your State Below:</h3>
-	<%= select "state", 
-		"abbrev_state", 
-		options_for_select(states_for_select), 
-		{ include_blank: true }, 
-		{ data: 
-			{ 
-				target: "isp.state", 
-				action: "isp#render"
-			} 
-		} %>
+  <h3>Select Your State Below:</h3>
+  <%= select "state", 
+    "abbrev_state", 
+    options_for_select(states_for_select), 
+    { include_blank: true }, 
+    { data: 
+      { 
+        target: "isp.state", 
+        action: "isp#render"
+      } 
+    } %>
 
-	<div data-target="isp.at-t">AT&amp;T</div>
-	<div data-target="isp.comcast">Comcast</div>
-	<div data-target="isp.twc">Time Warner</div>
-	<div data-target="isp.xfinity">Xfinity</div>
-	<div data-target="isp.spectrum">Spectrum</div>
+  <div data-target="isp.at-t">AT&amp;T</div>
+  <div data-target="isp.comcast">Comcast</div>
+  <div data-target="isp.twc">Time Warner</div>
+  <div data-target="isp.xfinity">Xfinity</div>
+  <div data-target="isp.spectrum">Spectrum</div>
 </div>
