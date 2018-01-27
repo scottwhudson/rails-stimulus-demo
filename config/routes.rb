@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get "/forms", to: "forms#index"
+	root to: "examples#index"
 
-  get "/clipboard", to: "forms#clipboard"
+  get "/console", to: "examples#console"
+  get "/clipboard", to: "examples#clipboard"
+  get "/isp_form", to: "examples#isp_form"
+  get "/action_arguments", to: "examples#action_arguments"
   
-  resources :pages, path: '/'
 end

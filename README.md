@@ -1,24 +1,5 @@
-# README
+# Stimulus.js On Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo contains examples of using Stimulus.js inside of a Rails app. Check back regularly for updates as 1.0 is about to drop.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Contributions Welcome! 
