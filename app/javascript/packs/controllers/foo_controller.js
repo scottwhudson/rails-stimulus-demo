@@ -2,19 +2,17 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
+  static targets = [ "name" ]
+
   connect() {
     console.log("this thing on?")
   }
   
   greet() {
-    console.log(`Hello, ${this.name}!`)
+    console.log(`Hello, ${this.nameTarget.value}!`)
   }
 
   bar() {
     console.log("baz")
-  }
-
-  get name() {
-    return this.targets.find("name").value
   }
 }
